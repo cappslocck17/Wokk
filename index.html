@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#draggable" ).draggable();
+  } );
+  </script>
+	
+	
+</head>
+<body>
+<div id="plast">
+<input onclick="myFunction(this)" type = "button" id = 'btn1' value="1">
+<input onclick="myFunction(this)" type = "button" id = 'btn2'value="2">
+<input onclick="myFunction(this)" type = "button" id = 'btn3' value="3"><br>
+<input onclick="myFunction(this)" type = "button" id = 'btn4' value="4">
+<input onclick="myFunction(this)" type = "button" id = 'btn5' value="5">
+<input onclick="myFunction(this)" type = "button" id = 'btn6' value="6"><br>
+<input onclick="myFunction(this)" type = "button" id = 'btn7' value="7">
+<input onclick="myFunction(this)" type = "button" id = 'btn8' value="8">
+<input onclick="myFunction(this)" type = "button" id = 'btn9'value="9">
+<input onclick="Reset (this)" type = "button" id = 'reset' value="C"  ><br>
+<input onclick="myFunction(this)" type = "button" id = 'plus' value="+">
+<input onclick="myFunction(this)" type = "button" id = 'minus' value="-">
+<input onclick="myFunction(this)" type = "button" id = 'divide' value="/">
+<input onclick="myFunction(this)" type = "button" id = 'multi' value="*">
+
+<input onclick = "resultt(this)"  type = "button" id = 'vallue' value="=">
+<input onclick="myFunction(this)" type = "text" id = "resu">
+</div>
+<br>
+<br>
+<br>
+
+<style>
+#chasu {
+border: 5px solid green;
+width:120px;
+height:45px;
+font-size:25px;
+}
+ </style>
+<div id="chasu">
+
+
+</div>
+
+<div id="MyClockDisplay" class="clock">
+
+</div>
+
+<div id="time"></div><br>
+<div id="clock">
+  <div class="num num1"><div>1</div></div>
+  <div class="num num2"><div>2</div></div>
+  <div class="num num3"><div>3</div></div>
+  <div class="num num4"><div>4</div></div>
+  <div class="num num5"><div>5</div></div>
+  <div class="num num6"><div>6</div></div>
+  <div class="num num7"><div>7</div></div>
+  <div class="num num8"><div>8</div></div>
+  <div class="num num9"><div>9</div></div>
+  <div class="num num10"><div>10</div></div>
+  <div class="num num11"><div>11</div></div>
+  <div class="num num12"><div>12</div></div>
+  <div id="hr-hand"></div>
+  <div id="min-hand"></div>
+  <div id="sec-hand"></div>
+</div>
+
+<div id="main">
+	<button class="left" onclick="slider.left();"><</button>
+	<div id="scr"></div>
+	<button class="right" onclick="slider.right();">></button>
+</div>
+
+<style>
+  #draggable {
+  border:20px solid blue;
+  width: 150px;
+  height: 150px;
+  padding: 0.5em;
+  }
+  #text1 
+  </style>
+<div id = "draggable">
+<span id = 'text1'> Я ЛЕЧУ </span>
+</div>
+
+<script>
+var a;
+function myFunction(e){
+    var mynum = e.value;
+    console.log(mynum);
+   var a = document.getElementById("resu").value += mynum;
+   console.log(a)
+   ;
+   
+};
+
+
+function Reset (e){
+	
+	var rese = "";
+	document.getElementById("resu").value = rese;
+};
+
+ function resultt(e){
+ var rer = eval(a);
+ console.log(rer)
+ };
+
+</script>
+
+	<script src = "script.js" defer></script>
+</body>
+</html>
